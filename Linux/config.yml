@@ -1,0 +1,15 @@
+UseAltVoice: false
+ResponseConfig:
+  StartedTracking:
+    - Text: Hello. I was told to wear a tux, but I guess the instructions were unclear.
+      Weight: 2
+    - Text: Welcome to Linux text-to-speech. As per tradition, it's like 5 times more difficult to setup and only half as good.
+      Weight: 2
+    - Text: Compiling shaders. Please wait.
+      Weight: .5
+  BossDefeated:
+    - Text: Sig Term {0}
+    - Text: Sig Kill {0}
+  DungeonBossCleared:
+    - Text: Sig Term {1}
+    - Text: Sig Kill {1}
