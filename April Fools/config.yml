@@ -2,10 +2,10 @@ UseAltVoice: true
 ResponseConfig:
   StartedTracking:
     - Text: |-
-        <voice gender='female'>Hey {{User}}, I have something very important to tell you. Google Has dedicated 1 Billion Dollars to giving the world <break strength='weak'/> Wait, it seems like there's something even more important.
+        Hey {{User}}, I have something very important to tell you. Google Has dedicated 1 Billion Dollars to giving the world <break strength='weak'/> Wait, it seems like there's something even more important.
         This just in...  Aliens have landed on Mount Wayupthar. They have hidden items in Hyrule and Zebes and have been ordered by Ganon and Mother Brain, the leaders, to take over the two worlds.
-        They have cpatured Shaktool, of Maridia, whoe has enough diabetes supplies to last 48 hours. Someone must save him and the world from these evil invaders.</voice>
-      TrackerImage: female
+        They have captured Shaktool, of Maridia, who has enough diabetes supplies to last 48 hours. Someone must save him and the world from these evil invaders.
+      TrackerImage: alt
       Weight: 1000
       AdditionalLines:
         - Text: Hello {{User}}. This sounds like a job for yours truly, CAPTAIN NOVOLIN!
@@ -19,3 +19,29 @@ ResponseConfig:
       - Text: <voice gender='female'>When traveling in Kraid's Lair, it's important to not look at Kraid's Awful Son.</voice>
         TrackerImage: doctor
         Weight: 1000
+LocationConfig:
+  # Old Man
+  - LocationNumber: 259
+    OutOfLogic:
+      - Text: "Hello Ranger. I have diabetes. Is there anything special I should know beforeclimbing the mountain?"
+        Weight: 1000
+        AdditionalLines:
+          - Text: Thanks for telling me.  The most important thing to remember is that extra activity can cause your blood sugars to go lower than regular activity. Be sure to take some extra snacks with you. And have fun.
+            TrackerImage: alt
+ItemConfig:
+  - Item: Pegasus Boots
+    WhenTracked:
+      "1":
+        - Text: Check you feet. They have boots now.
+          Weight: 1000
+  - Item: Hi-Jump Boots
+    WhenTracked:
+      "1":
+        - Text: Excuse me Captain Novolin. Could I give you a bit of advice?
+          Weight: 1000
+          TrackerImage: flipped
+          AdditionalLines:
+            - Text: Why sure, Joe.
+            - Text: You should wear sturdy shoes and socks to protect your feet throughout your adventure. Here, take these. I think they will fit just fine.
+              TrackerImage: flipped
+            - Text: Thanks for the shoes Joe. I'll be sure to wear them.
