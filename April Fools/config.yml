@@ -24,7 +24,7 @@ ResponseConfig:
         TrackerImage: doctor
         Weight: 1000
   BeatGame:
-    - Text: Congratulations, Captain. You saved the world from those evil aliens. I herby present to you the key to this seed.
+    - Text: Congratulations, Captain. You saved the world from those evil aliens. I hereby present to you the key to this seed.
       TrackerImage: alt
       Weight: 1000
   DungeonBossCleared:
