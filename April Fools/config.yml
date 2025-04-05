@@ -23,6 +23,10 @@ ResponseConfig:
       - Text: <voice gender='female'>When playing S M Z 3, it's important to defeat Spore Spawn.</voice>
         TrackerImage: doctor
         Weight: 1000
+  BeatGame:
+    - Text: Congratulations, Captain. You saved the world from those evil aliens. I herby present to you the key to this seed.
+      TrackerImage: alt
+      Weight: 1000
   DungeonBossCleared:
     - Text: How does insulin lower your blood sugar level?<break time=500ms'/>It lets sugar out of your cells; or it lets sugar into your cells?
       TrackerImage: alt
